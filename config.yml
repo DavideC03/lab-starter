@@ -37,4 +37,4 @@ steps:
     - type: respond
       with: 01_try-again.md
 - type: respond
-  with: 01_nice-work.md
+with: 01_nice-work.md
