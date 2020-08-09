@@ -7,9 +7,9 @@ description: This is a test
 # This will be used when the repository is crated for each individual learner
 
 template:
-  name: Test    # the name of the repository when it is created for the learner
-  repo: https://github.com/DavideC03/Test    # the name of the template repository from which to clone for the learner
-
+  name: Test
+  repo: https://github.com/DavideC03/Test
+  
 # `before` block
 # Actions to take place after the learner registers, but before they start interacting with their repo
 
@@ -27,7 +27,7 @@ steps:
 - title: Title
   description: Understand how map works on arrays
   event: pull_request.synchronize
-  actions: # a list of the actions that will occur when the step is triggered by an event
+  actions:
   - type: gate
     left: '%payload.pull_request.title%'
     operator: ===
