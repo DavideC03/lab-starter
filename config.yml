@@ -7,16 +7,15 @@ description: This is a test
 # This will be used when the repository is crated for each individual learner
 
 template:
-  name: Test
-  repo: https://github.com/DavideC03/lab-starter
+  name:     test-functional-programming-course
+  repo:     github-course-template-repo
   
 # `before` block
 # Actions to take place after the learner registers, but before they start interacting with their repo
 
 before:
-- type: # the type of action, full list at https://lab.github.com/docs/actions/
-  # some actions require additional options, those should appear below `type:`
-  # you can execute multiple actions in the `before` block
+- type: respond
+  with: 01_first-response.md
 
 # Steps for the course
 # A list of steps that take the learner through the course
